@@ -5,16 +5,20 @@ import java.util.Scanner;
 public class 입력테스트11 {
 
 	public static void main(String[] args) {
-		System.out.print("좋아하는 과목은?");
+		System.out.print("학생의 이름을 입력: ");
 		Scanner sc = new Scanner(System.in);
-		int sub = sc.nextInt();
+		int name = sc.nextInt();
+		System.out.print("학생의 점수를 입력: ");
+		int point = sc.nextInt();
 
-		if (sub == 1) {
-			System.out.println("-파이썬은 쉽고 강해요");
-		} else if (sub == 2) {
-			System.out.println("-자바는 실무에서 쓰여요");
+		if (point>=90) {
+			System.out.println("학점 A입니다");
+		} else if (point >= 80) {
+			System.out.println("학점 B입니다");
+		} else if (point >= 70) {
+			System.out.println("학점 C입니다");
 		} else {
-			System.out.println("-c++은 정교해요");
+			System.out.println("학점 D입니다");
 		}
 
 	}
